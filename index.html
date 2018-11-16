@@ -471,14 +471,14 @@
 <p><strong>可以这么说,造成该错误的大部分原因是因为你的项目中某些XML文件存在拼写或者语法上的错误</strong>, 但作为一位乐观的程序员,我们肯定先把编译器方面的原因排除:</p>
 <p>一. 那我们解决这个错误的方式往往第一步是先清空缓存,重新编译项目</p>
 <p><img src="/2018/11/12/Find-R/rebuild.png" alt="重新编译项目"></p>
-<p><img src="/Find-R/cache.png" alt="清空缓存"></p>
+<p><img src="/2018/11/12/Find-R/cache.png" alt="清空缓存"></p>
 <p>二. 然而这种在网上大肆流传的玄学方法从来没有解决过我的问题(还包括调大gradle的缓存之类的).如果上一步没有解决你的问题,<strong>你还是把注意力放在你最近新添加的资源文件上</strong>.</p>
 <p>可以这么说,排除XML文件错误的过程就是教科书式般的Debug流程.首先遵循的原则就是: <strong>只要没有修改过之前的代码,错误一定是出现新增量的代码中的.</strong> 你可能很快就会发现:TextView拼写成了别的单词,或者误输入的一些字母在XML文件中,而编译器似乎完全没有察觉.<br>或者控件的括号匹配存在问题,你可能漏了一个符号<code>/&gt;</code>.总之,你发现了XML中的错误.当然XML文件不只局限于布局文件,还有Drawable文件等等等等.<br>Android Studio的<code>Inspect Code</code>也许可以帮助更快的发现这些问题.</p>
-<p><img src="/Find-R/inspect.png" alt="代码视查"></p>
+<p><img src="/2018/11/12/Find-R/inspect.png" alt="代码视查"></p>
 <p>三. AndroidManifest文件</p>
 <p><strong>别忘了,它也是你要检查的一部分.</strong></p>
 <p>有时我把AndroidManifest文件中的注册FileProvider的代码中的属性resource写成了source,这导致R包链接失败</p>
-<p><img src="/Find-R/provider.png" alt="代码视查"><br>可以看到这里有一个Warning.</p>
+<p><img src="/2018/11/12/Find-R/provider.png" alt="代码视查"><br>可以看到这里有一个Warning.</p>
 <p>四. 如果你死活都找不到你到底错在哪了(我哪里错了?我哪里错了?)你就回退到你之前能正常通过编译的版本吧.所以使用代码版本控制还是很重要的在这个时候,可以让你的项目回到正常状态.之后再把增量的代码亦步亦趋地补回去.当然建议你,添加一些就编译一次,这也是让你的Debug之路更加轻松的不二法门.如果你没有对你的项目进行版本控制,也可以手动删除新添加的代码</p>
 <p>五. 好吧,你还是没有解决这个问题你目前的状态现在就只能两个选择,要么继续硬着头皮和错误玩捉迷藏(有一次这个捉迷藏持续了一整天!),要么开始怀疑编译器,怀疑人生…<br>到此我也无能为力了…</p>
 <h5 id="总结"><a href="#总结" class="headerlink" title="总结:"></a>总结:</h5><ol>
