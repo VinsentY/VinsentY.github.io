@@ -326,8 +326,7 @@
       
         
           
-            <p>#### </p>
-<p>最近自己在考科目二，昨天刚一遍通过了。练车的经历并不让人留恋，留下的记忆也就只有教练的谩骂和天气的寒冷。感觉练完车自己变成熟了，不知是不是因为练车练出了厚脸皮的原因。</p>
+            <p>最近自己在考科目二，昨天刚一遍通过了。练车的经历并不让人留恋，留下的记忆也就只有教练的谩骂和天气的寒冷。感觉练完车自己变成熟了，不知是不是因为练车练出了厚脸皮的原因。</p>
 
           
         
@@ -447,8 +446,7 @@
       
         
           
-            <p>转载自个人博客: <a href="https://vinsenty.github.io" target="_blank" rel="noopener">https://vinsenty.github.io</a></p>
-<h4 id="更加简洁地来动态申请九大危险权限"><a href="#更加简洁地来动态申请九大危险权限" class="headerlink" title="更加简洁地来动态申请九大危险权限"></a>更加简洁地来动态申请九大危险权限</h4><p><strong>一. Android权限</strong></p>
+            <h4 id="更加简洁地来动态申请九大危险权限"><a href="#更加简洁地来动态申请九大危险权限" class="headerlink" title="更加简洁地来动态申请九大危险权限"></a>更加简洁地来动态申请九大危险权限</h4><p><strong>一. Android权限</strong></p>
 <p>在Android 6.0及以上的设备，在需要使用以下涉及安全的危险权限时，需要动态申请.</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">group:android.permission-group.CONTACTS</span><br><span class="line">    permission:android.permission.WRITE_CONTACTS</span><br><span class="line">    permission:android.permission.GET_ACCOUNTS    </span><br><span class="line">    permission:android.permission.READ_CONTACTS</span><br><span class="line">  </span><br><span class="line">  group:android.permission-group.PHONE</span><br><span class="line">    permission:android.permission.READ_CALL_LOG</span><br><span class="line">    permission:android.permission.READ_PHONE_STATE </span><br><span class="line">    permission:android.permission.CALL_PHONE</span><br><span class="line">    permission:android.permission.WRITE_CALL_LOG</span><br><span class="line">    permission:android.permission.USE_SIP</span><br><span class="line">    permission:android.permission.PROCESS_OUTGOING_CALLS</span><br><span class="line">    permission:com.android.voicemail.permission.ADD_VOICEMAIL</span><br><span class="line">  </span><br><span class="line">  group:android.permission-group.CALENDAR</span><br><span class="line">    permission:android.permission.READ_CALENDAR</span><br><span class="line">    permission:android.permission.WRITE_CALENDAR</span><br><span class="line">  </span><br><span class="line">  group:android.permission-group.CAMERA</span><br><span class="line">    permission:android.permission.CAMERA</span><br><span class="line">  </span><br><span class="line">  group:android.permission-group.SENSORS</span><br><span class="line">    permission:android.permission.BODY_SENSORS</span><br><span class="line">  </span><br><span class="line">  group:android.permission-group.LOCATION</span><br><span class="line">    permission:android.permission.ACCESS_FINE_LOCATION</span><br><span class="line">    permission:android.permission.ACCESS_COARSE_LOCATION</span><br><span class="line">  </span><br><span class="line">  group:android.permission-group.STORAGE</span><br><span class="line">    permission:android.permission.READ_EXTERNAL_STORAGE</span><br><span class="line">    permission:android.permission.WRITE_EXTERNAL_STORAGE</span><br><span class="line">  </span><br><span class="line">  group:android.permission-group.MICROPHONE</span><br><span class="line">    permission:android.permission.RECORD_AUDIO</span><br><span class="line">  </span><br><span class="line">  group:android.permission-group.SMS</span><br><span class="line">    permission:android.permission.READ_SMS</span><br><span class="line">    permission:android.permission.RECEIVE_WAP_PUSH</span><br><span class="line">    permission:android.permission.RECEIVE_MMS</span><br><span class="line">    permission:android.permission.RECEIVE_SMS</span><br><span class="line">    permission:android.permission.SEND_SMS</span><br><span class="line">    permission:android.permission.READ_CELL_BROADCASTS</span><br></pre></td></tr></table></figure>
 <p>而每次动态申请权限，都需要在每个应用中写重复性的代码，所以如何把这个过程简单而优雅地封装起来呢？</p>
@@ -830,7 +828,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
